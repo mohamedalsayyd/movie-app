@@ -16,7 +16,6 @@ function App() {
       "https://api.themoviedb.org/3/movie/popular?api_key=cd75c9df4296d943db09f8a4a8f443f0&language=en-US&page=1"
     );
     const movies = await data.json();
-    // console.log(movies);
     setPopular(movies.results);
     setFiltered(movies.results);
   };
